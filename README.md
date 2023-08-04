@@ -1,122 +1,66 @@
-**Welcome to the LUUQAD English Learning Open Source Project**
+# Luuqad
 
 ![LUUQAD Logo](/public/luuqad.png)
+**DEMO LINK:** [https://luuqad.vercel.app](https://luuqad.vercel.app)
 
-DEMO LINK: https://luuqad.vercel.app
+### READ THIS IN SOMALI LANGUAGE 👉 [SOMALI](/docs/documentation-afsomali.md)
 
 ## Introduction
 
-Thank you for your interest in contributing to LUUQAD, our open source project aimed at providing a user-friendly platform for people to learn English interactively and effectively. LUUQAD is built with Next.js 13, Prisma, and PlanetScale.
+Luuqad is an educational plattform aimed at enabling Somali speakers to improve and learn English. The software provides various features and resources to enhance language learning, making it accessible and user-friendly.
 
 ## Table of Contents
 
-- [User and Lessons](#user-and-lessons)
-    - [Reporting Issues](#reporting-issues)
-  - [Community and Communication](#community-and-communication)
-  - [License](#license)
+- [Installation](#installation)
+- [Code of Conduct](./docs/CODE_OF_CONDUCT.md)
+- [Contributing Guidelines](./docs/CONTRIBUTING.md)
+- [Style Guidelines](./docs/STYLE_GUIDELINES.md)
+- [Community](#community-and-communication)
+- [License](#license)
 
 ## Project Description
 
-LUUQAD is an English Learning Open Source Project that aims to create an interactive platform for users to learn English at their own pace. The platform will offer a wide range of lessons, exercises, quizzes, and tracking features to monitor progress. Our goal is to make language learning an enjoyable experience for learners from all around the world.
+LUUQAD is an English Learning Open Source Project that aims to create an interactive platform for users to learn English at their own pace. The platform offers a wide range of lessons, exercises, quizzes, and tracking features to monitor progress. Our goal is to make language learning an enjoyable experience for the Somali People.
 
-## How to Contribute
+## Installation
 
-We welcome contributions from developers, designers, content creators, and anyone passionate about language education. Here's how you can get involved:
+To use Luuqad, follow these installation instructions:
 
-### Setting Up the Development Environment
-
-1. Ensure you have Node.js and npm (Node Package Manager) installed on your machine.
-
-2. Clone this repository to your local environment:
+- Ensure you have Node.js and npm (Node Package Manager) installed on your machine.
+- Fork this repository to your remote github repo and clone to your local environment.
 
 ```bash
-git clone https://github.com/your-username/luuqad.git
-cd luuqad
+git clone https://github.com/{username}/luuqad.git
 ```
 
-3. Install the project dependencies:
+- Go to where you have cloned the project and Install the project dependencies.
 
 ```bash
 npm install
 ```
 
-4. Set up the database and Prisma:
+## Code of Conduct
 
-   - Follow the documentation for Prisma to set up your database connection and schema.
+Please read and adhere to our [Code of Conduct](docs/CODE_OF_CONDUCT.md) to ensure a respectful and inclusive community for everyone.
 
-   - Create a `.env` file based on the `.env.example` template and update the necessary environment variables.
+## Contributing Guidelines
 
-### Submitting Changes
+[![luuqad](https://img.youtube.com/vi/1kymX200Mp8/0.jpg)](https://www.youtube.com/watch?v=1kymX200Mp8)
 
-1. Before you start working on a new feature or bug fix, create a new branch from the `main` branch.
+If you wish to contribute to Luuqad, please review our [Contributing Guidelines](docs/CONTRIBUTING.md) for more information on how to get involved.
 
-```bash
-git checkout -b feature/your-feature-name
-```
+## Style Guidelines
 
-2. Make your changes and test thoroughly.
-
-3. Commit your changes with a descriptive commit message:
-
-```bash
-git commit -m "Add feature/bug fix - Your detailed description here"
-```
-
-4. Push your branch to the remote repository:
-
-```bash
-git push origin feature/your-feature-name
-```
-
-5. Open a pull request (PR) from your branch to the `main` branch. Provide a clear and concise description of your changes in the PR.
-
-### Code Style
-
-Please follow the coding conventions and code style guidelines outlined in our [style guide](STYLE_GUIDE.md) to maintain consistency across the project.
-
-### Adding New Features
-
-If you plan to work on a significant new feature, it's a good idea to discuss it with the community first. Open an issue to propose your idea and gather feedback before starting the implementation.
-
-## Schema (not final)
-
-### Authentication
-
-User: `id`, `name`, `email` and `password`, `type`, `created_at`, `updated_at` (optional = location, age etc)
-
-#### Lessons
-
-Lesson: `id`, `title`, `description`, `slug`, `level`, `status`, `created_at`, `updated_at`
-
-### Units
-
-Unit: `id`, `lesson_id`, `title`, `description`, `slug`, `status`, `created_at`, `updated_at`
-
-### Questions
-
-Question: `id`, `unit_id`, `title`, `description`, `slug`, `status`, `created_at`, `updated_at`
-
-### Answers
-
-Answer: `id`, `question_id`, `answer`, `is_correct`, `status`, `created_at`, `updated_at`
-
-### User and Lessons
-
-user_lessons: `id`, `user_id`, `lesson_id`, `created_at`, `updated_at`
-
-### Reporting Issues
-
-If you encounter a bug, have a suggestion, or need clarification, please check the existing issues and discussions. If it hasn't been reported yet, create a new issue with a descriptive title and detailed information.
+To maintain a consistent and organized codebase, please follow our [Style Guidelines](docs/STYLE_GUIDELINES.md) when contributing to the project.
 
 ## Community and Communication
 
 Join our community to collaborate, ask questions, and stay up-to-date with the project's progress:
 
-- GitHub Discussions: [link to discussions](https://github.com/your-username/luuqad/discussions)
-- Slack Channel: #english-learners (request an invite in the discussions)
+- [Discussions](https://github.com/duraanali/luuqad/discussions)
+- [Slack](slack-url)
+- [Whatsapp Group](https://chat.whatsapp.com/GnVXgpBgosUGGIvz4Fw5Bm)
 
 ## License
 
 LUUQAD is licensed under the [MIT License](LICENSE). By contributing to this project, you agree to license your contributions under the same license.
-
-Let's work together to create a fun and effective English learning platform for learners worldwide! Happy contributing! 🚀
